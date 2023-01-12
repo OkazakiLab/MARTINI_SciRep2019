@@ -1,0 +1,39 @@
+#include "martini_v2.2.itp"
+#include "martini_v2.0_ions.itp"
+#include "martini_v2.0_POPC_02.itp"
+#include "martini_v2.0_POPE_02.itp"
+#include "martini_v2.0_POPS_02.itp"
+#include "Protein_A.itp"
+#include "Protein_B.itp"
+
+#define RUBBER_BANDS
+
+
+
+[ system ]
+; name
+POPC:POPE:POPS=2.0:2.0:6.0_and_pacsin1:2dimer
+
+[ molecules ]
+; name        number
+Protein_A 	 1
+Protein_B 	 1
+Protein_A 	 1
+Protein_B 	 1
+Protein_A        1
+Protein_B	 1
+Protein_A        1
+Protein_B        1
+Protein_A        1
+Protein_B        1
+Protein_A        1
+Protein_B        1
+POPC           600
+POPE           600
+POPS          1801
+POPC           600
+POPE           600
+POPS          1801
+W           214659
+NA+           4164
+CL-            562
